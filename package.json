@@ -39,7 +39,7 @@
     "prepublishOnly": "yarn lint && yarn build && yarn test && yarn config:npm",
     "postpublish": "yarn config:dev",
     "prettier": "./node_modules/.bin/prettier --write \"src/**/*.{ts,tsx}\"",
-    "postinstall": "yarn build"
+    "postinstall": "yarn install && yarn build"
   },
   "jest": {
     "preset": "react-native",
